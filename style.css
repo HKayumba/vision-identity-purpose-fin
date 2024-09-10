@@ -1,0 +1,745 @@
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Sens', 'Helvetica Neue', sans-serif;
+}
+h1,h2,h3,h4{
+    font-family:  "Playfair Display", serif;
+    color: #002147;
+}
+P{
+    font-size: 20px;
+}
+/*--------------header----------*/
+.header{
+    background-color: #002147;
+}
+.navbar{
+    background-color: #002147;
+}
+
+.header ul a{
+    color: whitesmoke;
+}
+.header ul a:hover{
+    color: red;
+}
+.header ul a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0%;
+    background: red;
+    transition: .6s;
+}
+.header a:hover:after{
+    width: 100%;
+}
+/*----- About Us ------*/
+.home-hero{
+    min-width: 100vh;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(5, 22, 39, 0.7),rgba(7, 7, 7, 0.7)),url(./Images/Home\ Hero\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.home h1{
+    padding-top: 100px;
+    /*color: #062646;*/
+    color: white;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home .btn{
+    background-color: rgb(117, 14, 14);
+}
+.home .btn:hover{
+    background-color: rgb(83, 23, 23);
+}
+
+.home a{
+    text-decoration: none;
+    color: white;
+}
+.header .hero .lead{
+    color: whitesmoke;
+}
+/* ----- About -----*/
+.about{
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+.about h1{
+    color: #062646;
+    font-weight: 700;
+}
+.about p{
+    font-size: 20px;
+    text-align: justify;
+}
+.about-img{
+    position: relative;
+}
+.about h1 ::after, ::before{
+    box-sizing: border-box;
+}
+.about-font-img img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 40px;
+    z-index: 2;
+    left: 30px;
+}
+.about-back-img img{
+    width: 500px;
+    height: 480px;
+    position: absolute;
+    left: 200px;
+}
+.skills{
+    margin-top: 20px;
+    padding-top: 40px;
+    background: #e9e8e856;
+
+}
+.skills h2{
+    color: #062646;
+    font-weight: 700;
+}
+.skills p{
+    color: #062646;
+    font-size: 18px;
+}
+.skills i{
+    font-size: 40px;
+    color: rgb(255, 185, 56);
+}
+.count{
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.offer{
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.offer h1{
+    color: #062646;
+    font-weight: 700;
+}
+.offer h3{
+    color: #062646;
+}
+.offer i{
+    font-size: 50px;
+    padding-bottom:10px;
+    color: rgb(255, 0, 0);
+}
+
+/*----- Testimonials---*/
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.testimonials .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow: auto;
+}
+
+.testimonial-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 15px;
+    padding: 30px;
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.testimonial-content {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-author img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial-author h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.testimonial-author p {
+    font-size: 14px;
+    color: #999;
+}
+
+/* ----- */
+.testimonials{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+.testimonial{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    row-gap: 30px;
+    overflow: hidden;
+}
+.testimonials .image{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonials .slide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.slide p{
+    text-align: center;
+    padding: 0 160px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 15px;
+    
+}
+.quote-icon{
+    font-size: 30px;
+    color: var(--buttons);
+    text-align: center;
+    font-weight: 900px;
+}
+.details .name{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--header-footer);
+    padding-top: 2px;
+}
+/*------ FAQs ------ */
+.faqs-wrapper{
+    padding: 30px;
+    max-width: 80%;
+    margin: auto;
+}
+.faqs-wrapper > p,
+.faqs-wrapper > h2{
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.accordion{
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.accordion i{
+    font-size: 1.6rem;
+}
+.active,
+.accordion:hover{
+    background-color: #f1f7f5;
+}
+.pannel{
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+}
+.pannel p{
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.faq {
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+.faq.active{
+    border: none;
+}
+
+
+/* ---- home cta ----*/
+.home-cta .col-4 .btn{
+    background: white;
+    padding: 10px 20px;
+    color: red;
+}
+.home-cta .col-4 .btn a{
+    text-decoration: none;
+    color: red;
+    font-family: Roboto;
+}
+.home-cta .col-4 .btn:hover{
+    background: #062646;
+    color: white;
+}
+.home-cta .col-4 .btn a:hover{
+    color: white;
+}
+
+
+
+/*------ Services ----- */
+.services-hero{
+    min-width: 100vh;
+    height: 50vh;
+    position: relative;
+    background-image: linear-gradient(rgba(22, 23, 24, 0.7),rgba(7, 7, 7, 0.7)),url(./Images/services-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.services-hero .text-center h1{
+    color: whitesmoke;
+    padding-top: 12rem;
+}
+.mentoring p{
+    padding-top: 20px;
+    font-size: 23px;
+}
+
+.what-we-offer{
+    padding-bottom: 5%;
+}
+.what-we-offer h2{
+    padding-bottom: 3%;
+    font-weight: 700;
+}
+.what-we-offer h3{
+    font-weight: 600;
+}
+.services{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgb(248, 248, 248);
+    /* background: #f9f9f9 */
+}
+
+.services h2{
+    color: #032d5c;
+    font-weight: bold;
+}
+.services h3{
+    color: #002147;
+    font-weight: 600;
+}
+.services p{
+    font-size: 18px;
+}
+.services i{
+    font-size: 60px;
+    padding-bottom: 10px;
+    color: red;
+}
+
+/* ---- Services ---- */
+
+.shadow-sm{
+    height: 380px;
+    padding: 20px;
+    text-align: center;
+}
+.services .shadow-sm{
+    height: 380px;
+    padding: 20px;
+    text-align: center;
+}
+/*---- coaching -----*/
+.coaching{
+    padding-bottom: 5%;
+}
+.coaching .col img{
+    width: 100%; 
+    width: 110%;
+}
+.coaching .col p{
+    padding-top: 10%;
+}
+/*---- speaker --- */
+.speaker{
+    padding-bottom: 5%;
+}
+.speaker .col p{
+    margin-top: 20%;
+}
+
+.cta {
+    background: #ced7df;
+    color: #002147;
+}
+.cta .btn{
+    background: rgb(117, 14, 14);
+}
+.cta .btn a{
+    text-decoration: none;
+    color: white;
+}
+.cta .btn:hover{
+    background: rgb(70, 14, 14);
+}
+
+/*----- Blog ----*/
+.blog-hero h1{
+    margin-top: 4%;
+    color: #062646;
+}
+
+.blog-hero a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+/*---- Contact Page -----*/
+.contact-hero{
+    min-width: 100vh;
+    height: 50vh;
+    position: relative;
+    background-image: linear-gradient(rgba(22, 23, 24, 0.7),rgba(7, 7, 7, 0.7)),url(./Images/contact-us.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.contact-hero .text-center h1{
+    color: whitesmoke;
+    padding-top: 12rem;
+}
+.contact p{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.icon-square{
+    background: #002147;
+    border-radius: 100%;
+}
+.icon-square i{
+    color: aliceblue;
+}
+.contact .d-flex{
+    padding-top: 10px;
+}
+.contact-form{
+    width: 100%;
+    padding: 40px;
+    background: #f1f1f1;
+}
+.contact-form h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #002147;
+}
+.contact .text-center{
+    font-size: 30px;
+    font-weight: 500;
+    color: #002147;
+}
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact-form .input-box input, textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #002147;
+    outline: none;
+    resize: none;
+}
+.contact-form .input-box textarea{
+   height: 150px;
+}
+.contact-form .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #002147;
+}
+.contact-form .input-box input:focus + span,
+.contact-form .input-box input:valid + span,
+.contact-form .input-box textarea:focus + span,
+.contact-form .input-box textarea:valid + span{
+    color: red;
+    font-size: 14px;
+    transform: translateY(-25px);
+}
+.contact-form .btn{
+    background: #002147;
+    color: aliceblue;
+}
+/*------ Footer -------*/
+.Footer{
+    background: #062646;
+}
+
+/* ---- Blog content ----*/
+.blog-section {
+    margin-bottom: 10%;
+}
+.blog-container h2{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-weight: 800;
+    font-size: 50px;
+}
+.blog-container h3{
+    margin-top: 2%;
+    font-weight: 600;
+    font-size: 30px;
+}
+.blog-container img{
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+}
+.blog-container p,
+.blog-container ul{
+    font-size: 25px;
+    text-align: justify;
+}
+.blog-container i{
+    font-size: 25px;
+    font-weight: 600;
+}
+/* --- About-us ---- */
+.aboutUs-hero{
+    min-width: 100vh;
+    height: 50vh;
+    position: relative;
+    background-image: linear-gradient(rgba(22, 23, 24, 0.7),rgba(7, 7, 7, 0.7)),url(./Images/aboutUs.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.aboutUs-hero h1{
+    color: whitesmoke;
+    padding-top: 12rem;
+}
+.who-we-are h2{
+    color: #002147;
+}
+.who-we-are img{
+    width: 100%;
+}
+.what-we-do h2,
+.what-we-do h3{
+    color: #002147;
+}
+
+
+
+footer .nav a{
+    color: rgb(255, 255, 255);
+}
+footer .nav a:hover{
+    color: #14b18f;
+}
+footer .socials i{
+    color: red;
+}
+footer .socials i:hover{
+    color: rgb(143, 61, 61);
+}
+footer p{
+    color: rgb(255, 255, 255);
+}
+
+
+/*---- Mobile Version ----- */
+@media (max-width: 768px) {
+
+    /* Adjust heading sizes */
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3, h4 {
+        font-size: 20px;
+    }
+
+    /* General paragraph size */
+    p {
+        font-size: 16px;
+    }
+
+    /* Header adjustments */
+    .header {
+        background-color: #002147;
+    }
+    .navbar {
+        background-color: #002147;
+    }
+    .header ul a {
+        color: whitesmoke;
+    }
+    .header ul a:hover {
+        color: red;
+    }
+
+    /* Home Hero Section */
+    .home-hero {
+        height: 70vh; /* Decrease height for mobile */
+        background-size: cover;
+        margin-bottom: 30px;
+        min-width: 45vh;
+    }
+    
+    .home h1 {
+        padding-top: 50px; /* Adjust padding for mobile */
+        font-size: 24px;
+        width: 50vh;
+    }
+    .home p{
+        width: 50vh;
+        font-size: 16px;
+    }
+    .home .btn {
+        padding: 8px 15px;
+        font-size: 16px;
+        width: 50vh;
+    }
+
+    /* About Us Section */
+    .about {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+    .about h1 {
+        font-size: 22px;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .about-font-img img{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 40px;
+        z-index: 2;
+        left: 2px;
+        align-items: center;
+        text-align: center;
+    }
+    .about-back-img img{
+        width: 70%;
+        height: 80px;
+        position: absolute;
+        left: 10px;
+    }
+    .skills{
+        margin-top: 95%;
+        padding-top: 40px;
+        background: #e9e8e856;
+    
+    }
+    .skills h2{
+        color: #062646;
+        font-weight: 700;
+    }
+    .skills p{
+        color: #062646;
+        font-size: 18px;
+    }
+    .skills i{
+        font-size: 40px;
+        color: rgb(255, 185, 56);
+    }
+
+    /* Testimonials Section */
+    .testimonial-item {
+        flex: 0 0 100%; /* Stack testimonials in mobile view */
+        padding: 20px;
+    }
+    .testimonial-slider {
+        flex-direction: column; /* Adjust for better mobile viewing */
+    }
+
+    /* Contact Form */
+    .contact-form .input-box input, textarea {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .contact-form .btn {
+        padding: 10px 20px;
+    }
+
+    /* Services */
+    .services h2 {
+        font-size: 24px;
+    }
+    .services h3 {
+        font-size: 20px;
+    }
+    .services p {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 14px;
+    }
+
+    /* Blog Section */
+    .blog-container h2 {
+        font-size: 24px;
+    }
+    .blog-container h3 {
+        font-size: 20px;
+    }
+    .blog-container p {
+        font-size: 16px;
+    }
+
+}
